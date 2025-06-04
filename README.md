@@ -156,7 +156,6 @@ You have two methods to populate your database:
 
    **For macOS/Linux:**
    ```bash
-   # Using curl on macOS/Linux
    curl -X POST http://127.0.0.1:8000/search \
      -H "Content-Type: application/json" \
      -d '{"prompt": "Find me a stylish winter coat under $100"}'
@@ -164,10 +163,12 @@ You have two methods to populate your database:
    
    **For Windows PowerShell:**
    ```powershell
-   # Using curl on Windows PowerShell
-   curl -X POST http://127.0.0.1:8000/search `
-     -H "Content-Type: application/json" `
-     -d '{\"prompt\": \"Find a stylish winter coat under $100\"}'
+   Invoke-WebRequest -Uri "http://localhost:8000/search" `
+     -Method Post `
+     -ContentType "application/json" `
+     -Body @{
+       prompt = "Find a stylish winter coat under $100"
+      } | ConvertTo-Json
    ```
 
 5. **(Optional) Deploy a Local Frontend**: Instructions for setting up an optional demo frontend interface are included at the end of this README. This lightweight interface allows you to visualize search results and test the Fashion Search API's capabilities through a simple UI rather than raw API responses.
