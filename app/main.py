@@ -45,8 +45,6 @@ app: FastAPI = FastAPI(title="Fashion Query API")
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    # TODO: Change to be more restrictive
-    # allow_origins=["https://yourdomain.com", "http://localhost:3000"],
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods
