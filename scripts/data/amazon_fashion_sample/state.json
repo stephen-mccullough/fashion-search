@@ -1,0 +1,31 @@
+{
+  "_data_files": [
+    {
+      "filename": "data-00000-of-00001.arrow"
+    }
+  ],
+  "_fingerprint": "48d353ed2740897c",
+  "_format_columns": [
+    "main_category",
+    "title",
+    "average_rating",
+    "rating_number",
+    "features",
+    "description",
+    "price",
+    "images",
+    "videos",
+    "store",
+    "categories",
+    "details",
+    "parent_asin",
+    "bought_together",
+    "subtitle",
+    "author",
+    "embedding"
+  ],
+  "_format_kwargs": {},
+  "_format_type": null,
+  "_output_all_columns": false,
+  "_split": null
+}

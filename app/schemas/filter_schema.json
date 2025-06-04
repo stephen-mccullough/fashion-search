@@ -1,0 +1,60 @@
+{
+    "name": "filter_schema",
+    "description": "Use the user prompt to determine if the query is related to fashion or clothing items. If it is, return a schema for the filters that can be used to query a database for products.",
+    "strict": true,
+    "type": "json_schema",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "is_related_to_fashion": {
+                "type": ["boolean"],
+                "description": "Whether the query is related to fashion or clothing items."
+            },
+            "min_price": {
+                "type": ["number", "null"],
+                "description": "The minimum price of the product."
+            },
+            "max_price": {
+                "type": ["number", "null"],
+                "description": "The maximum price of the product."
+            },
+            "min_avg_rating": {
+                "type": ["number", "null"],
+                "description": "The minimum average rating of the product out of 5 stars."
+            },
+            "max_avg_rating": {
+                "type": ["number", "null"],
+                "description": "The maximum average rating of the product out of 5 stars."
+            },
+            "min_rating_count": {
+                "type": ["number", "null"],
+                "description": "The minimum number of ratings of the product."
+            },
+            "max_rating_count": {
+                "type": ["number", "null"],
+                "description": "The maximum number of ratings of the product."
+            },
+            "store_name": {
+                "type": ["string", "null"],
+                "description": "The name of the store where the product is sold."
+            },
+            "discontinued": {
+                "type": ["string", "null"],
+                "description": "Whether the product is discontinued by the manufacturer. Choose 'null' if the user does not care",
+                "enum": ["Yes", "No"]
+            }
+        },
+        "required": [
+            "is_related_to_fashion",
+            "min_price",
+            "max_price",
+            "min_avg_rating",
+            "max_avg_rating",
+            "min_rating_count",
+            "max_rating_count",
+            "store_name",
+            "discontinued"
+        ],
+        "additionalProperties": false
+    }
+}

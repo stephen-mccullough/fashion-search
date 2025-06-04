@@ -1,0 +1,158 @@
+{
+  "builder_name": "amazon-reviews-2023",
+  "citation": "",
+  "config_name": "raw_meta_Amazon_Fashion",
+  "dataset_name": "amazon-reviews-2023",
+  "dataset_size": 1144974146,
+  "description": "Amazon Review 2023 is an updated version of the Amazon Review 2018 dataset.\nThis dataset mainly includes reviews (ratings, text) and item metadata (desc-\nriptions, category information, price, brand, and images). Compared to the pre-\nvious versions, the 2023 version features larger size, newer reviews (up to Sep\n2023), richer and cleaner meta data, and finer-grained timestamps (from day to \nmilli-second).\n\nThis is a subset for items in domain: Amazon_Fashion.",
+  "download_checksums": {
+    "raw/meta_categories/meta_Amazon_Fashion.jsonl": {
+      "num_bytes": 1422365805,
+      "checksum": null
+    }
+  },
+  "download_size": 1422365805,
+  "features": {
+    "main_category": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "average_rating": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "rating_number": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "features": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "description": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "price": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "images": {
+      "hi_res": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "large": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "thumb": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      },
+      "variant": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      }
+    },
+    "videos": {
+      "feature": {
+        "title": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "url": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "user_id": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "Sequence"
+    },
+    "store": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "categories": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "details": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "parent_asin": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "bought_together": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "subtitle": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "author": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "embedding": {
+      "feature": {
+        "dtype": "float64",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2567339951,
+  "splits": {
+    "full": {
+      "name": "full",
+      "num_bytes": 1144974146,
+      "num_examples": 826108,
+      "shard_lengths": [
+        356000,
+        364000,
+        106108
+      ],
+      "dataset_name": "amazon-reviews-2023"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

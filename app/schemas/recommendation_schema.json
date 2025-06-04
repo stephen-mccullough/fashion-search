@@ -1,0 +1,17 @@
+{
+    "name": "llm_response_schema",
+    "description": "Give a response to the user's query, involving the search results and a recommendation.",
+    "strict": true,
+    "type": "json_schema",
+    "schema": {
+        "type": "object",
+        "properties": {
+            "response": {
+                "type": "string",
+                "description": "General text response to the user's query"
+            }
+        },
+        "required": ["response"],
+        "additionalProperties": false
+    }
+}

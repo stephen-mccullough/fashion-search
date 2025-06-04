@@ -1,0 +1,34 @@
+.active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 20px;
+}
+
+.filter-tag {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.9rem;
+  padding: 6px 12px;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.filter-tag:hover {
+  background-color: #e8e8e8;
+}
+
+@media (max-width: 768px) {
+  .active-filters {
+    justify-content: center;
+  }
+  
+  .filter-tag {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+} 
