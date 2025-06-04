@@ -10,6 +10,11 @@ Fashion Search is a semantic search API for fashion products, built with FastAPI
 - **Multi-factor Ranking**: Combines semantic similarity, ratings, and popularity
 - **AI Recommendations**: Generates natural language recommendations for search results
 
+## Architecture
+<div align="center">
+   <img src="Architecture_Diagram.png" alt="Architecture Diagram"  width="900"/>
+</div>
+
 # Setup Guide
 This guide will walk you through setting up and deploying a local instance of the Fashion Search API
 
